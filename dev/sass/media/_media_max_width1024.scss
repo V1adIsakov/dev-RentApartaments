@@ -15,8 +15,11 @@
             inset: 70px 0 0;
             flex-direction: column;
             padding: 15px;
-            background-color: #363A4D;
+            background-color: #FF847C ;
             z-index: 1;
+            a {
+                color: #fff;
+            }
             .btn-primary {
                 justify-content: center;
                 width: 295px;
@@ -39,7 +42,24 @@
            display: none;
         }
         .show{
+        margin-top: 5vw;
         display: flex;
+        }
+        .information {
+            bottom: 200px;
+            right: 30px;
+            border-radius: 300px;
+            .information-title{
+                font-size: 18px;
+            }
+            .information-list__item{
+                font-size: 14px;
+            }
+        }
+        h2:before {
+            width: 200px;
+            height: 2px;
+            top: 28px;
         }
 }
 

@@ -21,11 +21,11 @@
 			width: 100%;
 			display: flex;
 			a{
-			 color: #000;
+			 color: #fff1dd;
+             text-transform: uppercase;
 			 text-decoration: none;
-			 padding: 5px;
 			 &:hover{
-				color: #E58D35;
+				color: #E84A5F;
 			 }
 			}
 
@@ -69,6 +69,7 @@
     .btn-primary {
         background-color: $color-button;
         border-color: $color-button;
+        color: #fff;
     
         &:hover,
         &:active,

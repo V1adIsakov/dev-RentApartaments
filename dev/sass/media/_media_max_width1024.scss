@@ -1,4 +1,46 @@
 @media screen and (max-width: 1024px) {
+        .header{
+            padding-bottom: 15px;
+            .container{
+                padding-bottom: 18px;
+                padding-top: 18px;
+                }
+            .logo{
+                max-width: 95px;
+            }
+        }
+        .header__navigation {
+            width: 100%;
+            position: fixed;
+            inset: 70px 0 0;
+            flex-direction: column;
+            padding: 15px;
+            background-color: #363A4D;
+            z-index: 1;
+            .btn-primary {
+                justify-content: center;
+                width: 295px;
+                height: 68px;
+                flex-shrink: 0;
+                margin: 0 auto;
+            }
+        }
+        .header__navigation-list {
+            flex-direction: column;
+            margin-bottom: 17px;
+            padding: 5px;
+            z-index: 5;
+        }
+        .header__item-link {
+            font-size: 24px;
+            line-height: 222%;
+        }
+        .header__navigation {
+           display: none;
+        }
+        .show{
+        display: flex;
+        }
 }
 
 

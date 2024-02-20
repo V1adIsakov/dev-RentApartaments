@@ -74,3 +74,49 @@ img,svg {
 p{
     color: #fff;
 }
+.btn-burger {
+    padding: 1.3px 13.5px;
+    border: none;
+    position: relative;
+    font: inherit;
+    display: inline-block;
+    overflow: visible;
+    margin: 0;
+
+    &:hover {
+        opacity: .7;
+    }
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 27px;
+        height: 2.5px;
+        background: #fff;
+        transition: top .2s ease, opacity .2s ease, bottom .2s ease, transform .2s ease;
+    }
+
+    &:after {
+        top: 10px;
+    }
+
+    &:before {
+        top: -10px;
+    }
+
+    &.open {
+                transform: rotate(50deg);
+                &:before {
+                    top: 0;
+                    opacity: 0;
+                    transform: rotate(0deg);
+                }
+                &:after {
+                    bottom: 0;
+                    transform: rotate(90deg) translate(-9px, 0px);
+                }
+            }
+}

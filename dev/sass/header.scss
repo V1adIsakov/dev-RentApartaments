@@ -1,50 +1,94 @@
-header {
-    background: #222;
+.header{
+	padding: 25px 0 39px;
+	
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1170px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: auto;
+		margin-right: auto;
 
-    nav {
-        display: flex;
+		.header__logo{
+			width: 100%;
+			max-width: 50px;
+			max-height: 50px;
+		}
+	}
+		&__navigation{
+			width: 100%;
+			display: flex;
+			a{
+			 color: #000;
+			 text-decoration: none;
+			 padding: 5px;
+			 &:hover{
+				color: #E58D35;
+			 }
+			}
+
+			&-list{
+				max-width: 602px;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				margin: 0 auto;
+				padding: 0px;
+				list-style: none;
+				justify-content: space-between;
+			}
+	}
+    .btn {
+        width: 171px;
+        height: 50px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 146%;
+        border-radius: 90px;
+        padding: 13px 17px;
+        display: inline-flex;
         align-items: center;
-        gap: 25px;
-		height: $header-height;
-		text-transform: uppercase;
-    }
-
-    .logo {
-
-        display: inline-block;
-        width: 56px;
-        margin-right: 24px;
-
-        svg {
-            fill: #fff;
+    
+        &:hover {
+            .icon {
+                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(180%) contrast(101%);
+            }
+        }
+    
+        &:focus-visible {
+            box-shadow: none;
+        }
+    
+        &:focus {
+            box-shadow: none;
         }
     }
-
-
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    text-transform: uppercase;
-    transition: .4s;
-    &.show {
-        display: flex;
+    
+    .btn-primary {
+        background-color: $color-button;
+        border-color: $color-button;
+    
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $color-button-secondary;
+            border-color: $color-button-secondary;
+        }
+    
     }
-
-    a {
-        font-size: 18px;
-        color: #fff;
-        font-size: 18px;
-        text-decoration: none;
-		padding: 6px 12px;
-        padding: 6px 12px;
-        transition: .4s;
+    
+    .btn-secondary {
+        background-color: transparent;
+        border-color: $color-button;
+    
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $color-button-secondary;
+            border-color: $color-button-secondary;
+        }
     }
-}
-
-
-.btn-burger {
-    margin-left: auto;
+    
 }

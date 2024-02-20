@@ -1,0 +1,30 @@
+.genplan{
+    height: calc(100vh - 115px);
+}
+
+.build-path-color {
+        fill-opacity: 0;
+        stroke-opacity: 0;
+        stroke-width: 3px;
+        cursor: pointer;
+        &:hover {
+            fill-opacity: 0.3;
+            stroke-opacity: 1;
+        }
+}
+    .one{
+        fill: #FC6DB2;
+        stroke: #FF63E6;
+    }
+    .two{
+        fill: #02C2FF;
+        stroke: #06B4FF;
+    }
+    .three{
+        fill: #6F19DC;
+        stroke: #C317FF;
+    }
+    .four{
+        fill: #00FF47;
+        stroke: #14FF00;
+    }

@@ -43,3 +43,10 @@ function Menu() {
 }
 
 burger.addEventListener('click', Menu);
+
+//Floor JS
+const installFloor = () => {
+  console.log('installFloor');
+}
+
+document.querySelector('.floor-plan') ? installFloor(): null

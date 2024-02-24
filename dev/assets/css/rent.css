@@ -1,0 +1,16 @@
+h1{
+    color:red;
+}
+.item-path-colors {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+    stroke-width: 3px;
+    cursor: pointer;
+}
+
+.item-path-colors:hover {
+    fill: #31e65e;
+    stroke: #145831;
+    fill-opacity: 0.3;
+    stroke-opacity: 1;
+}

@@ -1,0 +1,32 @@
+.items-path {
+    fill: #32CA42;
+    stroke: #1E4F0D;
+    fill-opacity: 0;
+    stroke-opacity: 0;
+    stroke-width: 3px;
+    cursor: pointer;
+    &:hover {
+        fill-opacity: 0.3;
+        stroke-opacity: 1;
+    }
+}
+
+.information {
+    max-width: 300px;
+    position: absolute;
+    bottom: 10vw;
+    right: 3vw;
+    border: 5px solid #E84A5F ;
+    padding: 28px;
+    border-radius: 50px;
+}
+
+h2 {
+    &:before{
+        width: 200px;
+        height: 5px;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+    }
+}

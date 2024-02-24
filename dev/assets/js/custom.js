@@ -24,10 +24,10 @@ const addBooking = (builds) => builds.forEach(build => {
     const buildLink = build.closest('a');
     const flatQuantity = build.getAttribute('data-flat-quantity');
     const flatToNumber = parseInt(flatQuantity);
-    flatToNumber ? flatToNumber >= 0 : buildLink.classList.add('booked');
+    flatToNumber ? flatToNumber >= 0 : buildLink.classList.add('bkd');
 
     buildLink.addEventListener('click', (event) => {
-      if (buildLink.classList.contains('booked')) {
+      if (buildLink.classList.contains('bkd')) {
         event.preventDefault()
       }
     })

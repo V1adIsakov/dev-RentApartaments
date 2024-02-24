@@ -1,7 +1,7 @@
 .genplan{
     height: calc(100vh - 115px);
     position: relative;
-
+}
     .build-path-color {
         fill-opacity: 0;
         stroke-opacity: 0;
@@ -28,15 +28,14 @@
         fill: #00FF47;
         stroke: #14FF00;
     }
-}
-    .booked{
+    .bkd{
+        path{
             fill: #ff0000;
             stroke: #ff0000;
             fill-opacity: 0.5;
             cursor: no-drop;
-     }
-
-
+        }
+    }
     .information {
         position: absolute;
         bottom: 4vw;

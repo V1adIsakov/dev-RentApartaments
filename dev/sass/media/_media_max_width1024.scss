@@ -61,6 +61,13 @@
             height: 2px;
             top: 28px;
         }
+        .information-title::before{
+            display: none;
+        }
+
+        .floor-info {
+            flex-direction: column;
+        }
 }
 
 

@@ -1,10 +1,11 @@
 .container-xl{
     max-width: 1700px;
+    margin: 0 auto;
 }
 .floor-info {
     display: flex;
     gap: 24px;
-    background: #7ee7ff;
+    background: #F8B195;
     border-radius: 12px;
     padding: 24px;
     margin: 24px 0 36px;
@@ -16,6 +17,9 @@
     padding: 12px;
     border-radius: 6px;
     text-align: center;
+}
+.info-item__title{
+    font-weight: 700;
 }
 .floor-path{
     fill: greenyellow;

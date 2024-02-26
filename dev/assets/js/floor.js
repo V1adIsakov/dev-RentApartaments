@@ -1,101 +1,101 @@
 const flatArray = [{
         id: 0,
-        house: "2",
+        house: "3",
         floor: "1",
-        rooms: "3",
-        square: "82.3 м.кв.",
-        price: "700$",
-        priceTotal: "52500$",
+        rooms: "4",
+        square: "103.7 м²",
+        price: "1200$",
+        priceTotal: "130 525$",
         flatNumber: 1,
-        status: "booking",
+        status: "booked",
     },
     {
         id: 1,
-        house: "2",
+        house: "3",
         floor: "1",
-        rooms: "2",
-        square: "60,7 м.кв.",
-        price: "700$",
-        priceTotal: "42000$",
+        rooms: "3",
+        square: "88.5 м²",
+        price: "887$",
+        priceTotal: "88 200$",
         flatNumber: 2,
-        status: "sold",
+        status: "action",
     },
     {
         id: 2,
-        house: "2",
+        house: "3",
         floor: "1",
         rooms: "3",
-        square: "60,7 м.кв.",
-        price: "700$",
-        priceTotal: "42000$",
+        square: "95.7 м²",
+        price: "930$",
+        priceTotal: "99 900$",
         flatNumber: 3,
-        status: "action",
+        status: "sold",
     },
     {
         id: 3,
         house: "2",
         floor: "1",
-        rooms: "3",
-        square: "82 м.кв.",
-        price: "700$",
-        priceTotal: "52500$",
+        rooms: "5",
+        square: "142 м²",
+        price: "1300$",
+        priceTotal: "155 000$",
         flatNumber: 4,
-        status: "booking",
+        status: "free",
     },
     {
         id: 4,
         house: "2",
         floor: "1",
-        rooms: "3",
-        square: "79.7 м.кв.",
-        price: "700$",
-        priceTotal: "55790$",
+        rooms: "5",
+        square: "145 м²",
+        price: "1300$",
+        priceTotal: "158 000$",
         flatNumber: 5,
-        status: "booking",
+        status: "booked",
     },
     {
         id: 5,
         house: "2",
         floor: "1",
-        rooms: "1",
-        square: "39.2 м.кв.",
+        rooms: "2",
+        square: "70 м²",
         price: "700$",
-        priceTotal: "27440$",
+        priceTotal: "77 000$",
         flatNumber: 6,
-        status: "free",
+        status: "action",
     },
     {
         id: 6,
         house: "2",
         floor: "1",
-        rooms: "1",
-        square: "40.0 м.кв.",
-        price: "700$",
-        priceTotal: "29400$",
+        rooms: "3",
+        square: "80 м²",
+        price: "850$",
+        priceTotal: "83 000$",
         flatNumber: 7,
-        status: "booking",
+        status: "sold",
     },
     {
         id: 7,
         house: "2",
         floor: "1",
-        rooms: "1",
-        square: "39.2 м.кв.",
+        rooms: "2",
+        square: "70 м²",
         price: "700$",
-        priceTotal: "27440$",
+        priceTotal: "77 000$",
         flatNumber: 8,
-        status: "booking",
+        status: "action",
     },
     {
         id: 8,
-        house: "2",
+        house: "3",
         floor: "1",
-        rooms: "3",
-        square: "79.3 м.кв.",
-        price: "700$",
-        priceTotal: "55510$",
+        rooms: "4",
+        square: "103.7 м²",
+        price: "1200$",
+        priceTotal: "130 525$",
         flatNumber: 9,
-        status: "action",
+        status: "free",
     },
 ]
 
@@ -112,14 +112,14 @@ window.addEventListener('load', () => {
 
         const initialValue = [{
             id: 8,
-            house: "22",
+            house: "1",
             floor: "1",
             rooms: "3",
-            square: "79.3 м.кв.",
-            price: "900$",
-            priceTotal: "55510$",
+            square: "55 м²",
+            price: "1000$",
+            priceTotal: "95 510$",
             flatNumber: 9,
-            status: "action",
+            status: "booked",
         }]
 
         const render = (array) => {
@@ -193,33 +193,24 @@ window.addEventListener('load', () => {
             })
         })
     }
-    function applyStyles(classStyles) {
-        classStyles.forEach(style => {
-            const elements = document.querySelectorAll(style.selector);
-            elements.forEach(element => {
-                element.style.fill = style.fill;
-    
-                element.addEventListener('mouseover', function() {
-                    this.style.fill = style.hoverFill;
-                });
-    
-                element.addEventListener('mouseleave', function() {
-                    this.style.fill = style.fill;
-                });
-            });
-        });
-    }
-    
-    const classStyles = [
-        { selector: '.booking .flat-path', fill: 'violet', hoverFill: 'yellow' },
-        { selector: '.action .flat-path', fill: 'blue', hoverFill: 'yellow' },
-        { selector: '.sold .flat-path', fill: 'red', hoverFill: 'yellow' },
-    ];
-    
-    applyStyles(classStyles);
-    
+
 
     document.querySelector('.floor-plan') ? installFloor() : null
 })
 
+
+//const styleBooked = document.querySelectorAll('.booking .flat-path');
+//    styleBooked.forEach(element => {
+//        element.style.fill = 'violet';
+//    });
+//
+//    const styleAction = document.querySelectorAll('.action .flat-path');
+//    styleAction.forEach(element => {
+//        element.style.fill = 'blue';
+//    });
+//
+//    const styleSold = document.querySelectorAll('.sold .flat-path');
+//    styleSold.forEach(element => {
+//        element.style.fill = 'red';
+//    });
 

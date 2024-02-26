@@ -24,7 +24,7 @@
 .flat{
     &:active {
         .flat-path {
-            fill: #2f754d;
+            fill: #2bfc01;
         } 
     }
     &:hover{
@@ -34,7 +34,6 @@
         }
     }
     &-path{
-    fill: greenyellow;
     stroke: #000;
     stroke-width: 3px;
     fill-opacity: 0;
@@ -55,24 +54,36 @@
 }
 
 .action {
+    .flat-path{
+        fill: #e68e0b;
+    }
     .status-cell {
-        fill: #80D34E;
+        fill: #c49c2f;
     }
 }
 
 .booking {
+    .flat-path{
+        fill: #9b33f0;
+    }
     .status-cell {
         fill: #6B68FF;
     }
 }
 
 .sold {
+    .flat-path{
+        fill: #f81111;
+    }
     .status-cell {
         fill: #D34E4E;
     }
 }
 
 .free {
+    .flat-path{
+        fill: #328af0;
+    }
     .status-cell {
         fill: #00DEFC;
     }
